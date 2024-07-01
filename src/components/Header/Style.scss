@@ -1,0 +1,67 @@
+@import './../../styles/vars';
+
+.header {
+    color: $black;
+    background-color: $main-color;
+    position: relative;
+    
+    &__git-link {
+        position: absolute;
+        top: 180px;
+        display: inline-block;
+        padding: 2px 18px;
+        border-radius: 0 24px 24px 0;
+
+        background-color: $accent-color;
+        transition: opacity 0.2s ease-in, padding 0.2s ease-in;
+
+        &:hover {
+            opacity: 0.8;
+            padding-left: 32px;
+        }
+    }
+    &__git-logo {
+        width: 135px;
+        height: auto;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 95%;
+            position: absolute;
+            bottom: 60px;
+            border-top: 2px solid $accent-color;
+        }
+        &::before {
+            content: "";
+            display: block;
+            height: 100%;
+            position: absolute;
+            left: 95%;
+            border-left: 2px solid $accent-color;
+        }
+    }
+
+    &__name {
+        padding-top: 380px;
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: $gray;
+    }
+
+    &__profession {
+        padding-bottom: 480px;
+        font-size: 2rem;
+        font-weight: 200;
+        text-align: center;
+        color: $accent-color;
+        padding-top: 20px;
+    }
+}

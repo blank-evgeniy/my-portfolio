@@ -1,0 +1,32 @@
+@import './../../styles/vars';
+
+.projects-list {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.project {
+    display: flex;
+    gap: 120px;
+    padding: 60px 90px;
+
+    &__description {
+        font-size: 2.5rem;
+        font-weight: 300;
+    }
+
+    &__photo {
+        height: 400px;
+        width: 650px;
+        object-fit: cover;
+        border: solid $accent-color;
+        border-width: 2px 0px 0px 2px;
+        filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.25));
+        transition: transform 0.2s ease-in;
+
+        &:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+    }
+}

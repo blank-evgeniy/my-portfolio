@@ -1,0 +1,30 @@
+@import './../../styles/vars';
+
+.projects {
+    position: relative;
+
+    .container {
+        padding-bottom: 100px;
+        &::after {
+            content: "";
+            display: block;
+            width: 95%;
+            position: absolute;
+            bottom: 60px;
+            right: 0;
+            border-top: 2px solid $accent-color;
+        }
+        &::before {
+            content: "";
+            display: block;
+            height: 100%;
+            position: absolute;
+            right: 95%;
+            border-left: 2px solid $accent-color;
+        }
+    }
+
+    &__title {
+        padding-top: 60px;
+    }
+}

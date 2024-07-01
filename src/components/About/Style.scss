@@ -1,0 +1,33 @@
+@import './../../styles/vars';
+
+.about {
+    background-color: $accent-color;
+    width: calc(4px + 90%);
+    margin: 0 auto;
+    color: $main-color;
+
+    &__title {
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    &__info {
+        padding: 120px 60px;
+        display: flex;
+        gap: 100px;
+    }
+
+    &__description {
+        font-size: 2rem;
+        padding: 8px;
+        border-radius: 12px;
+        border: 2px solid $main-color;
+    }
+
+    &__photo {
+        height: 360px;
+        border-radius: 12px;
+        width: auto;
+        border-bottom: 20px solid $main-color;
+    }
+}

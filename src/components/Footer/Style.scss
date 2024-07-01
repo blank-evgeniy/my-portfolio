@@ -1,0 +1,21 @@
+@import './../../styles/vars';
+
+.footer {
+    padding: 30px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+    &__link {
+        color: black;
+        
+        &:hover {
+            color: $accent-color;
+        }
+    }
+
+    &__text {
+        font-size: 1.25rem;
+    }
+}

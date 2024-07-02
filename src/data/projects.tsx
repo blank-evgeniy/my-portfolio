@@ -4,7 +4,7 @@ type projectPhotos = {
     mobilePhoto: string,
 }
 
-type project = {
+export type project = {
     name: string,
     description: string,
     photos: projectPhotos,

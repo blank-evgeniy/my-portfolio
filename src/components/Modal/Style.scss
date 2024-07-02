@@ -1,0 +1,40 @@
+@import './../../styles/vars';
+
+.modal {
+    height: 100vh;
+    width: 100vw;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    pointer-events: none;
+
+    transition: opacity 0.2s ease-in;
+
+    background-color: rgba(0, 0, 0, 0.3);
+
+    &_active {
+        opacity: 1;
+        pointer-events: all;
+    }
+}
+
+.modal__content {
+    padding: 16px;
+    border-radius: 16px;
+    background-color: $main-color;
+
+    transform: scale(0.2);
+    transition: transform 0.2s ease-out;
+
+    &_active {
+        transform: scale(1);
+    }
+}

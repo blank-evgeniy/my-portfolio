@@ -27,6 +27,8 @@
 
 .modal__content {
     max-width: 95%;
+    max-height: 95%;
+    overflow: auto;
     padding: 32px;
     border-radius: 16px;
     background-color: $main-color;

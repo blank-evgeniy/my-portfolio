@@ -1,8 +1,6 @@
 @import './../../styles/vars';
 
 .about {
-    margin: 0 auto;
-
     color: $main-color;
     background-color: $accent-color;
 
@@ -16,7 +14,7 @@
         align-items: center;
         gap: 100px;
 
-        padding: 120px 60px;
+        padding: 120px;
     }
 
     &__description {

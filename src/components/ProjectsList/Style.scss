@@ -39,11 +39,27 @@
 @include  mediaLaptop{
     .project {
         flex-direction: column-reverse;
-        gap: 60px;
+        gap: 16px;
         padding: 30px;
 
         &__photo {
             width: 90%;
         }
+
+        &__description {
+            padding-bottom: 30px;
+        }
+
+    }
+}
+
+@include  mediaTablet{
+    .project {
+        padding: 8px;
+
+        &__photo {
+            width: 95%;
+        }
+
     }
 }

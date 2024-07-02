@@ -24,8 +24,8 @@ const ProjectsList: React.FC = () => {
                 </div> 
             )}
             {modalActive && 
-            <Modal active={modalActive} setActive={setModalActive}>
-                <DetailProject project={projects[currentProject]}/>
+            <Modal setActive={setModalActive}>
+                <DetailProject project={projects[currentProject]} setActive={setModalActive}/>
             </Modal>
             }
         </div>

@@ -3,12 +3,25 @@
 .detail-project {
     position: relative;
 
+    &__close {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+
+        border: none;
+        background: transparent;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
     &__title {
-        padding: 16px 0;
+        padding: 48px 0 16px 0;
     }
     
     &__photo {
-        height: 380px;
+        height: 390px;
         padding: 12px;
         filter: drop-shadow(0px 5px 4px rgba(70, 51, 8, 0.25));
     }

@@ -15,22 +15,21 @@
 
     opacity: 0;
     animation: appears 0.3s forwards;
-    pointer-events: none;
+    pointer-events: all;
 
     background-color: rgba(0, 0, 0, 0.4);
 
-    &_active {
-        opacity: 1;
-        pointer-events: all;
-    }
 }
 
 .modal__content {
     max-width: 95%;
     max-height: 95%;
-    overflow: auto;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
     padding: 32px;
-    border-radius: 16px;
+    border-radius: 12px;
     background-color: $main-color;
 
     animation: appearsContent 0.3s forwards;

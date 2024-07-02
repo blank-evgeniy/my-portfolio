@@ -7,7 +7,7 @@ const Projects: React.FC  = () => {
     return (
         <section className='projects'>
             <div className='container'>
-                <h2 className='projects__title title'>Проекты</h2>
+                <h2 className='projects__title title'>Мои проекты</h2>
                 <ProjectsList/>
             </div>
         </section>

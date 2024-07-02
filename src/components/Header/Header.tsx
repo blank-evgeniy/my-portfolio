@@ -6,7 +6,7 @@ import './Style.scss';
 const Header: React.FC  = () => {
     return (
         <header className='header'>
-            <a className='header__git-link' href='https://github.com/blank-evgeniy/my-portfolio'>
+            <a className='header__git-link' href='https://github.com/blank-evgeniy/my-portfolio' target='_blank'>
                 <img className='header__git-logo' src={Logo}/>
             </a>
             <div className='container'>

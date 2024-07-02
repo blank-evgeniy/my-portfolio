@@ -43,7 +43,7 @@ const projects: project[] = [
             functionalPhoto: 'rezero_dop.jpg',
             mobilePhoto: 'rezero_mob.jpg',
         },
-        stack: ['React', 'Sass', 'Redux Toolkit'],
+        stack: ['React', 'Sass', 'TypeScript', 'Redux Toolkit'],
         link: 'https://rezero-react-redux-ts.vercel.app/',
     },
 ]

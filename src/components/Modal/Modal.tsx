@@ -10,8 +10,8 @@ type ModalProps = {
 
 const Modal: React.FC<ModalProps> = ({active, setActive, children}) => {
     useEffect( () => {
-        document.body.style.overflow = active? 'hidden' : 'auto';
-        document.body.style.paddingRight = active? '16px' : '0';
+        document.body.style.overflow = 'hidden';
+        document.body.style.paddingRight = '11px';
 
         const keyDownHandler = (event: KeyboardEvent) => {
             console.log('User pressed: ', event.key);
@@ -26,7 +26,8 @@ const Modal: React.FC<ModalProps> = ({active, setActive, children}) => {
         document.addEventListener('keydown', keyDownHandler);
 
         return () => {
-            document.body.style.overflow = "scroll"
+            document.body.style.overflow = "auto";
+            document.body.style.paddingRight = '0px';
             document.removeEventListener('keydown', keyDownHandler);
         }
     // eslint-disable-next-line react-hooks/exhaustive-deps

@@ -18,14 +18,14 @@ const Skills: React.FC  = () => {
         <section className='skills'>
             <h2 className='skills__title title'>Мои навыки</h2>
             <div className='skills__list'>
-                <FaHtml5 size={'128px'} className='skills__item'/>
-                <FaCss3Alt size={'128px'} className='skills__item'/>
-                <SiJavascript size={'128px'} className='skills__item'/>
-                <SiTypescript size={'128px'} className='skills__item'/>
-                <SiSass size={'128px'} className='skills__item'/>
-                <RiTailwindCssFill size={'128px'} className='skills__item'/>
-                <FaReact size={'128px'} className='skills__item'/>
-                <SiRedux size={'128px'} className='skills__item'/>
+                <FaHtml5 size={'80px'} className='skills__item'/>
+                <FaCss3Alt size={'80px'} className='skills__item'/>
+                <SiJavascript size={'80px'} className='skills__item'/>
+                <SiTypescript size={'80px'} className='skills__item'/>
+                <SiSass size={'80px'} className='skills__item'/>
+                <RiTailwindCssFill size={'80px'} className='skills__item'/>
+                <FaReact size={'80px'} className='skills__item'/>
+                <SiRedux size={'80px'} className='skills__item'/>
             </div>
         </section>
     );

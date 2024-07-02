@@ -15,7 +15,7 @@ export type project = {
 const projects: project[] = [
     {
         name: 'Сайт кафе',
-        description: 'Это мой первый проект, целью которого было закрепить полученные знания об html, css и нативном js. Также в нем я  воспользовался препроцессором SCSS и и методологией BEM.',
+        description: 'Это мой первый проект, целью которого было закрепить полученные знания об html, css и нативном js. Также в нем я  воспользовался препроцессором SCSS и методологией BEM.',
         photos: {
             mainPhoto: 'cafe_main.jpg',
             functionalPhoto: 'cafe_dop.jpg',

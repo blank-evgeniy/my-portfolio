@@ -11,13 +11,12 @@
     padding: 60px 90px;
 
     &__description {
-        font-size: 2.5rem;
+        font-size: 2rem;
         font-weight: 300;
     }
 
     &__photo {
-        height: 400px;
-        width: 650px;
+        width: 40%;
         object-fit: cover;
         border: solid $accent-color;
         border-width: 2px 0px 0px 2px;

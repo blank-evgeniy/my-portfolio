@@ -23,9 +23,11 @@ const ProjectsList: React.FC = () => {
                     <img onClick={() => {handleProjectClick(index)}} className='project__photo' src={path + project.photos.mainPhoto} alt={project.name}/>
                 </div> 
             )}
+            {modalActive && 
             <Modal active={modalActive} setActive={setModalActive}>
                 <DetailProject project={projects[currentProject]}/>
             </Modal>
+            }
         </div>
     );
 };

@@ -18,16 +18,17 @@
     }
 
     &__description {
-        font-size: 2rem;
+        font-size: 1.5rem;
         padding: 8px;
         border-radius: 12px;
         border: 2px solid $main-color;
     }
 
     &__photo {
-        height: 360px;
+        min-height: 360px;
+        object-fit: cover;
         border-radius: 12px;
         width: auto;
-        border-bottom: 20px solid $main-color;
+        border-bottom: 2px solid $main-color;
     }
 }

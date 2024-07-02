@@ -18,7 +18,7 @@
 
     transition: opacity 0.2s ease-in;
 
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.4);
 
     &_active {
         opacity: 1;
@@ -27,7 +27,7 @@
 }
 
 .modal__content {
-    padding: 16px;
+    padding: 32px;
     border-radius: 16px;
     background-color: $main-color;
 

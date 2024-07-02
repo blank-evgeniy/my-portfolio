@@ -40,6 +40,7 @@ const Modal: React.FC<ModalProps> = ({active, setActive, children}) => {
         >
             <div 
                 className={active? 'modal__content modal__content_active' : 'modal__content'}
+                onClick={e => {e.stopPropagation()}}
             >
                 {children}
             </div>

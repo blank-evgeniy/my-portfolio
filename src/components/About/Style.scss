@@ -1,10 +1,10 @@
 @import './../../styles/vars';
 
 .about {
-    background-color: $accent-color;
-    padding: 0 10%;
     margin: 0 auto;
+
     color: $main-color;
+    background-color: $accent-color;
 
     &__title {
         padding-top: 50px;
@@ -12,23 +12,51 @@
     }
 
     &__info {
-        padding: 120px 60px;
         display: flex;
+        align-items: center;
         gap: 100px;
+
+        padding: 120px 60px;
     }
 
     &__description {
         font-size: 1.5rem;
+
         padding: 8px;
+
         border-radius: 12px;
         border: 2px solid $main-color;
     }
 
     &__photo {
-        min-height: 360px;
         object-fit: cover;
+
+        height: 240px;
+        width: 180px;
+
         border-radius: 12px;
-        width: auto;
         border-bottom: 2px solid $main-color;
+    }
+}
+
+@include mediaLaptop {
+    .about{
+
+        &__info {
+            flex-direction: column-reverse;
+            gap: 20px;
+            padding: 60px;
+        }
+    }
+}
+
+@include mediaTablet {
+    .about{
+        &__info {
+            padding: 20px 8px;
+        }
+        &__description {
+            text-align: center;
+        }
     }
 }

@@ -13,22 +13,18 @@ const DetailProject: React.FC<DetailProjectProps> = ({project}) => {
     return (
         <div className='detail-project'>
             <h3 className='detail-project__title title'>{project.name}</h3>
-            <div className='detail-project__container'>
+            <img className='detail-project__photo' src={path + project.photos.functionalPhoto} alt={project.name+': функционал сайта'}/>
+            <img className='detail-project__photo' src={path + project.photos.mobilePhoto} alt={project.name+': мобильная версия'}/>
 
-                <img className='detail-project__photo' src={path + project.photos.functionalPhoto} alt={project.name+': функционал сайта'}/>
-                <img className='detail-project__photo' src={path + project.photos.mobilePhoto} alt={project.name+': мобильная версия'}/>
 
-                <div className='detail-project__info'>
-                    <dl className='detail-project__stack'>
-                        <dt>Стек проекта:</dt>
-                        {project.stack.map( (technology) => 
-                            <li className='detail-project__stack-item' key={technology}>{technology}</li>
-                        )}
-                    </dl>
-                    <a className='detail-project__link' href={project.link} target='_blank'>посетить сайт</a>
-                </div>
+            <dl className='detail-project__stack'>
+                <dt>Стек проекта:</dt>
+                {project.stack.map( (technology) => 
+                    <li className='detail-project__stack-item' key={technology}>{technology}</li>
+                )}
+            </dl>
+            <a className='detail-project__link' href={project.link} target='_blank'>посетить сайт</a>
 
-            </div>
         </div>
     );
 };

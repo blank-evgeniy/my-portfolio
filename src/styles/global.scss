@@ -10,6 +10,12 @@ html {
     background-color: $main-color;
 }
 
+@include mediaTablet{
+    html {
+        font-size: 12px;       
+    }
+}
+
 .title {
     font-size: 2.5rem;
     font-weight: bold;

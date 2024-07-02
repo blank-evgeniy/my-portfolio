@@ -26,6 +26,7 @@
 }
 
 .modal__content {
+    max-width: 95%;
     padding: 32px;
     border-radius: 16px;
     background-color: $main-color;
@@ -45,4 +46,10 @@
 @keyframes appearsContent {
     0% {transform: scale(0.2);}
     100% {transform: scale(1);}
+}
+
+@include mediaTablet {
+    .modal__content {
+        padding: 4px;
+    }
 }

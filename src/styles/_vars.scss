@@ -1,5 +1,30 @@
+//colors
 $main-color: #F7F0E9;
 $accent-color: #DF5333;
 $black: #000;
 $gray: #333;
 $white: #fff;
+
+//media
+$laptop: 1024px;
+$tablet: 768px;
+$phone: 480px;
+
+//mixins
+@mixin mediaLaptop {
+    @media screen and (max-width: $laptop){
+        @content;
+    }
+}
+
+@mixin mediaTablet {
+    @media screen and (max-width: $tablet){
+        @content;
+    }
+}
+
+@mixin mediaPhone {
+    @media screen and (max-width: $phone){
+        @content;
+    }
+}

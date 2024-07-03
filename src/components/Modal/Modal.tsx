@@ -1,5 +1,6 @@
 import React, { ReactNode, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { isMobile } from 'react-device-detect';
 
 import './Style.scss';
 
@@ -31,7 +32,7 @@ type ModalProps = {
 const Modal: React.FC<ModalProps> = ({active, setActive, children}) => {
     useEffect( () => {
         document.body.style.overflow = active? 'hidden' : 'auto';
-        document.body.style.paddingRight = active? '11px' : '0';
+        if (!isMobile) document.body.style.paddingRight = active? '11px' : '0';
 
         const keyDownHandler = (event: KeyboardEvent) => {
             console.log('User pressed: ', event.key);

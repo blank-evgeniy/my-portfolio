@@ -21,7 +21,7 @@
 
 .modal__content {
     max-width: 95%;
-    max-height: 95%;
+    max-height: 85%;
 
     overflow-y: auto;
     overflow-x: hidden;
@@ -34,5 +34,14 @@
 @include mediaTablet {
     .modal__content {
         padding: 4px;
+    }
+}
+
+@include mediaPhone {
+    .modal {
+        align-items: start;
+    }
+    .modal__content {
+        margin-top: 20px;
     }
 }

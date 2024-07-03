@@ -9,8 +9,6 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { FaReact } from "react-icons/fa";
 import { SiRedux } from "react-icons/si";
 
-
-
 import './Style.scss';
 
 const Skills: React.FC  = () => {

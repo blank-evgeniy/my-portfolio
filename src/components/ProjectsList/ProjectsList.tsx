@@ -1,9 +1,24 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 
 import './Style.scss'
 import projects from '../../data/projects';
 import Modal from '../Modal/Modal';
 import DetailProject from '../DetailProject/DetailProject';
+
+const projectAnimation = {
+    hidden: {
+        y: 100,
+        opacity: 0,
+    },
+    visible: {
+        y: 0,
+        opacity: 1,
+        transition: {
+            duration: 0.5
+        }
+    }
+}
 
 const ProjectsList: React.FC = () => {
     const path = './projects/';
@@ -18,16 +33,21 @@ const ProjectsList: React.FC = () => {
     return (
         <div className='projects-list'>
             {projects.map( (project, index) => 
-                <div className='project' key={index}>
+                <motion.div 
+                    className='project' 
+                    key={index}
+                    variants={projectAnimation}
+                    initial='hidden'
+                    whileInView='visible'
+                    viewport={{amount: 0.5, once: true}}
+                >
                     <p className='project__description'>{project.description}</p>
                     <img onClick={() => {handleProjectClick(index)}} className='project__photo' src={path + project.photos.mainPhoto} alt={project.name}/>
-                </div> 
-            )}
-            {modalActive && 
-            <Modal setActive={setModalActive}>
+                </motion.div> 
+            )} 
+            <Modal setActive={setModalActive} active={modalActive}>
                 <DetailProject project={projects[currentProject]} setActive={setModalActive}/>
             </Modal>
-            }
         </div>
     );
 };

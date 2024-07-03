@@ -9,16 +9,12 @@
         position: absolute;
         top: 20%;
         display: inline-block;
-        padding: 2px 18px;
+        padding: 2px 18px 2px 32px;
         border-radius: 0 24px 24px 0;
 
         background-color: $accent-color;
         transition: opacity 0.2s ease-in, padding 0.2s ease-in;
 
-        &:hover {
-            opacity: 0.8;
-            padding-left: 32px;
-        }
     }
     &__git-logo {
         width: 135px;

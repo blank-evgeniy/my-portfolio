@@ -20,7 +20,11 @@ const DetailProject: React.FC<DetailProjectProps> = ({project, setActive}) => {
             <h3 className='detail-project__title title'>{project.name}</h3>
 
             <img className='detail-project__photo' src={path + project.photos.functionalPhoto} alt={project.name+': функционал сайта'}/>
-            <img className='detail-project__photo' src={path + project.photos.mobilePhoto} alt={project.name+': мобильная версия'}/>
+            <img 
+                className='detail-project__photo detail-project__photo_mobile' 
+                src={path + project.photos.mobilePhoto} 
+                alt={project.name+': мобильная версия'}
+            />
 
             <dl className='detail-project__stack'>
                 <dt>Стек проекта:</dt>

@@ -17,3 +17,13 @@
         color: $main-color;
     }
 }
+
+@include mediaPhone{
+    .skills {
+        padding: 40px 5px 10px 5px;
+
+        &__list {
+            padding: 30px 5px;
+        }
+    }
+}

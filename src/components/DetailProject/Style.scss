@@ -69,6 +69,10 @@
             margin: 0 auto;
             height: 240px;
             padding: 4px;
+            
+            &_mobile {
+                height: 360px;
+            }
         }
     }
 }
@@ -76,7 +80,23 @@
 @include mediaPhone {
     .detail-project {
         &__photo {
+            height: 200px;
+
+            &_mobile {
+                height: 300px;
+            }
+        }
+    }
+}
+
+@include mediaPhoneS {
+    .detail-project {
+        &__photo {
             height: 160px;
+            
+            &_mobile {
+                height: 240px;
+            }
         }
     }
 }

@@ -9,6 +9,7 @@ $white: #fff;
 $laptop: 1024px;
 $tablet: 768px;
 $phone: 480px;
+$phone-s: 380px;
 
 //mixins
 @mixin mediaLaptop {
@@ -25,6 +26,12 @@ $phone: 480px;
 
 @mixin mediaPhone {
     @media screen and (max-width: $phone){
+        @content;
+    }
+}
+
+@mixin mediaPhoneS {
+    @media screen and (max-width: $phone-s){
         @content;
     }
 }

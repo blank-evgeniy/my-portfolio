@@ -3,12 +3,12 @@ import React from 'react';
 import './Style.scss';
 import ProjectsList from '../ProjectsList/ProjectsList';
 
-const Projects: React.FC  = () => {
+const Projects: React.FC = () => {
     return (
-        <section className='projects'>
-            <div className='container'>
-                <h2 className='projects__title title'>Мои проекты</h2>
-                <ProjectsList/>
+        <section className="projects">
+            <div className="container">
+                <h2 className="projects__title title">Мои проекты</h2>
+                <ProjectsList />
             </div>
         </section>
     );

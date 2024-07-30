@@ -26,6 +26,10 @@
         border: 2px solid $main-color;
     }
 
+    &__paragraph {
+        padding: 8px;
+    }
+
     &__photo {
         object-fit: cover;
 
@@ -38,8 +42,7 @@
 }
 
 @include mediaLaptop {
-    .about{
-
+    .about {
         &__info {
             flex-direction: column-reverse;
             gap: 20px;
@@ -49,7 +52,7 @@
 }
 
 @include mediaTablet {
-    .about{
+    .about {
         &__info {
             padding: 20px 8px;
         }

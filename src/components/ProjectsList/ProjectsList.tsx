@@ -41,9 +41,12 @@ const ProjectsList: React.FC = () => {
                     whileInView="visible"
                     viewport={{ amount: 0.5, once: true }}
                 >
-                    <p className="project__description">
-                        {project.description}
-                    </p>
+                    <div className="wrapper">
+                        <h2 className="project__name">{project.name}</h2>
+                        <p className="project__description">
+                            {project.description}
+                        </p>
+                    </div>
                     <img
                         onClick={() => {
                             handleProjectClick(index);

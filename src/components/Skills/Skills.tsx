@@ -8,6 +8,8 @@ import { SiSass } from 'react-icons/si';
 import { RiTailwindCssFill } from 'react-icons/ri';
 import { FaReact } from 'react-icons/fa';
 import { SiRedux } from 'react-icons/si';
+import { FaBootstrap } from 'react-icons/fa';
+import { SiJest } from 'react-icons/si';
 
 import './Style.scss';
 
@@ -24,6 +26,8 @@ const Skills: React.FC = () => {
                 <RiTailwindCssFill size={'80px'} className="skills__item" />
                 <FaReact size={'80px'} className="skills__item" />
                 <SiRedux size={'80px'} className="skills__item" />
+                <FaBootstrap size={'80px'} className="skills__item" />
+                <SiJest size={'80px'} className="skills__item" />
             </div>
         </section>
     );

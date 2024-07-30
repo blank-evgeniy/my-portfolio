@@ -13,6 +13,11 @@
 
     padding: 60px 30px;
 
+    &__name {
+        margin-bottom: 8px;
+        text-align: center;
+    }
+
     &__description {
         font-size: 1.5rem;
         font-weight: 300;
@@ -36,7 +41,7 @@
     }
 }
 
-@include  mediaLaptop{
+@include mediaLaptop {
     .project {
         flex-direction: column-reverse;
         gap: 16px;
@@ -49,17 +54,15 @@
         &__description {
             padding-bottom: 30px;
         }
-
     }
 }
 
-@include  mediaTablet{
+@include mediaTablet {
     .project {
         padding: 8px;
 
         &__photo {
             width: 95%;
         }
-
     }
 }

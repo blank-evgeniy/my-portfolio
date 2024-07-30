@@ -43,21 +43,26 @@ const About: React.FC = () => {
         >
             <h2 className="about__title title">Обо мне</h2>
             <div className="about__info">
-                <motion.p
+                <motion.div
                     className="about__description"
                     variants={textAnimation}
                 >
-                    Привет!
-                    <br /> <br /> Меня зовут Евгений. На данный момент я студент
-                    4 курса на направлении "прикладная информатика".
-                    <br />
-                    <br /> Я начинающий разработчик на react. У меня уже есть
-                    несколько PET-проектов, которые могут показать мои навыки.
-                    <br />
-                    <br /> На текущий момент моя цель устроиться на работу
-                    frontend разработчиком и дальше продолжать обучаться в этом
-                    направлении.
-                </motion.p>
+                    <p className="about__paragraph">Привет!</p>
+                    <p className="about__paragraph">
+                        Меня зовут Евгений. На данный момент я студент 4 курса
+                        на направлении "прикладная информатика".
+                    </p>
+                    <p className="about__paragraph">
+                        Я начинающий frontend-разработчик на react. У меня есть
+                        несколько PET-проектов, которые демонстрируют мои
+                        навыки.
+                    </p>
+                    <p className="about__paragraph">
+                        Сейчас моя основная цель - устроиться на работу, чтобы
+                        получить коммерческий опыт рарзработки, а также дальше
+                        совершенствоваться в своем направлении.
+                    </p>
+                </motion.div>
                 <motion.img
                     className="about__photo"
                     src={Photo}
